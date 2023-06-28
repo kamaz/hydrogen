@@ -97,7 +97,7 @@ export default function Homepage() {
         <Suspense>
           <Await resolve={featuredProducts}>
             {({products}) => {
-              if (!products?.nodes) return <></>;
+              if (!products?.nodes) return <>It is just empty</>;
               return (
                 <ProductSwimlane
                   products={products}
